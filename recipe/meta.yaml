@@ -1,5 +1,5 @@
 {% set name = "bcrypt" %}
-{% set version = "3.1.4" %}
+{% set version = "3.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 67ed1a374c9155ec0840214ce804616de49c3df9c5bc66740687c1c9b1cd9e8d
+  sha256: 44636759d222baa62806bbceb20e96f75a015a6381690d1bc2eda91c01ec02ea
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -50,3 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - dougalsutherland
+    - jan-janssen

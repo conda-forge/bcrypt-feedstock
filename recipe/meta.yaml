@@ -19,9 +19,9 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cffi                                   # [build_platform != target_platform]
     - {{ compiler('c') }}
-    - setuptools-rust
   host:
     - python
+    - setuptools-rust
     - pip
     - cffi >=1.1
   run:

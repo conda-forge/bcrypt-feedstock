@@ -22,11 +22,11 @@ requirements:
   host:
     - python
     - pip
-    - cffi >=1.1
+    - cffi >=1.1,<1.15
   run:
     - python
     - pip
-    - cffi >=1.1
+    - cffi >=1.1,<1.15
     - six >=1.4.1
 
 test:

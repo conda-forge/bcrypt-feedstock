@@ -17,6 +17,7 @@ requirements:
   host:
     - python
     - setuptools-rust
+    - rust
     - pip
   run:
     - python

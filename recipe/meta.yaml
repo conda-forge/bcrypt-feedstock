@@ -12,9 +12,12 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: True  # [build_platform != "linux_ppc64le"]
 
 requirements:
   build:
+    script_env:
+      - _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata__linux_ppc_64-linux-gnu  # [build_platform == "linux_ppc64le"]
     - {{ compiler('rust') }}
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - python                                 # [build_platform != target_platform]

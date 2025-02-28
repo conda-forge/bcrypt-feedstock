@@ -1,13 +1,13 @@
 {% set name = "bcrypt" %}
-{% set version = "4.2.1" %}
+{% set version = "4.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6765386e3ab87f569b276988742039baab087b2cdb01e809d74e74503c2faafe
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 3a3fd2204178b6d2adcf09cb4f6426ffef54762577a7c9b54c159008cb288c18
 
 build:
   number: 0

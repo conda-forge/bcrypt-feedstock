@@ -15,7 +15,6 @@ Documentation: https://github.com/pyca/bcrypt/
 
 Modern password hashing for your software and your servers
 
-
 Current build status
 ====================
 

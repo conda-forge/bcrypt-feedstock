@@ -13,7 +13,7 @@ source:
   sha256: 3a3fd2204178b6d2adcf09cb4f6426ffef54762577a7c9b54c159008cb288c18
 
 build:
-  number: 1
+  number: 2
   script:
     # PyPy has weird sysconfigdata name
     - if: "build_platform != target_platform and target_platform == \"linux-ppc64le\""
@@ -25,9 +25,9 @@ build:
 requirements:
   build:
     - if: build_platform != target_platform
-      then: python
-    - if: build_platform != target_platform
-      then: cross-python_${{ target_platform }}
+      then:
+        - python
+        - cross-python_${{ target_platform }}
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
     - ${{ compiler('rust') }}

@@ -13,7 +13,7 @@ source:
   sha256: f748f7c2d6fd375cc93d3fba7ef4a9e3a092421b8dbf34d8d4dc06be9492dfdd
 
 build:
-  number: 0
+  number: 1
   script:
     # PyPy has weird sysconfigdata name
     - if: "build_platform != target_platform and target_platform == \"linux-ppc64le\""

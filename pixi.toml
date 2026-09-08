@@ -361,6 +361,33 @@ description = "Debug bcrypt-feedstock with variant win_64_channel_sourcesconda-f
 [feature.build.tasks."inspect-win_64_channel_sourcesconda-forgepython3.14.____cp314t"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_channel_sourcesconda-forgepython3.14.____cp314t.yaml"
 description = "List contents of bcrypt-feedstock packages built for variant win_64_channel_sourcesconda-forgepython3.14.____cp314t"
+[feature.build.tasks."build-win_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315.yaml --target-platform win-arm64"
+description = "Build bcrypt-feedstock with variant win_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."debug-win_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315.yaml --target-platform win-arm64"
+description = "Debug bcrypt-feedstock with variant win_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315.yaml"
+description = "List contents of bcrypt-feedstock packages built for variant win_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315"
+[feature.build.tasks."build-win_arm64_channel_sourcesconda-forgepython3.14.____cp314"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_arm64_channel_sourcesconda-forgepython3.14.____cp314.yaml --target-platform win-arm64"
+description = "Build bcrypt-feedstock with variant win_arm64_channel_sourcesconda-forgepython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."debug-win_arm64_channel_sourcesconda-forgepython3.14.____cp314"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_arm64_channel_sourcesconda-forgepython3.14.____cp314.yaml --target-platform win-arm64"
+description = "Debug bcrypt-feedstock with variant win_arm64_channel_sourcesconda-forgepython3.14.____cp314 directly (without setup scripts)"
+[feature.build.tasks."inspect-win_arm64_channel_sourcesconda-forgepython3.14.____cp314"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_arm64_channel_sourcesconda-forgepython3.14.____cp314.yaml"
+description = "List contents of bcrypt-feedstock packages built for variant win_arm64_channel_sourcesconda-forgepython3.14.____cp314"
+[feature.build.tasks."build-win_arm64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_arm64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform win-arm64"
+description = "Build bcrypt-feedstock with variant win_arm64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."debug-win_arm64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_arm64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform win-arm64"
+description = "Debug bcrypt-feedstock with variant win_arm64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."inspect-win_arm64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_arm64_channel_sourcesconda-forgepython3.14.____cp314t.yaml"
+description = "List contents of bcrypt-feedstock packages built for variant win_arm64_channel_sourcesconda-forgepython3.14.____cp314t"
 
 [environments]
 build = ["build"]
